@@ -1,22 +1,55 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
 body {
     display: flex;
     flex-direction: column;
     align-items: center;
     font-family: Arial, sans-serif;
     padding: 10px;
-    
-}
-
-.scoreboard{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    
+    height: 100vh;
 }
 
 li{
     list-style: none;
     padding-bottom: 10px;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+
+/* index */
+h1{
+    padding-top: 40px;
+}
+.gameSelect{
+    display: flex;
+    height: 60vh;
+    width: 100vw;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.games{
+    /* padding: 100px; */
+    object-fit: cover;
+    transition: all 0.5s;
+}
+
+.games:hover{
+    transform: scale(1.2);
+}
+
+/* snake */
+.scoreboard{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .game-container {
@@ -44,3 +77,55 @@ button{
     border: 1.5px solid black;
     margin-bottom: 10px;
 }
+
+/* TikTakToe specifieke styling */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5px;
+    margin: 20px auto;
+    width: 300px;
+}
+
+.cell {
+    width: 100px;
+    height: 100px;
+    border: 2px solid #333;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 36px;
+    font-weight: bold;
+    cursor: pointer;
+    background-color: white;
+    transition: background-color 0.3s ease;
+}
+
+.cell:hover {
+    background-color: #ddd;
+}
+
+button {
+    margin: 15px 0;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    background-color: #4F75FF;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #3a5cb1;
+}
+
+#gameResult {
+    margin-top: 15px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+}
+

@@ -1,30 +1,27 @@
 <!DOCTYPE html>
-<html lang="nl">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Snake Game</title>
-    <link rel="stylesheet" href="css/style.css">
-    <script src="js/main.js" defer></script>
+    <link rel="stylesheet" href="../css/style.css">
+
+    <title>Scrum website</title>
 </head>
 
 <body>
-    <h1>Score: <span id="score">0</span></h1>
-    <div class="game-container">
-        <canvas id="gameCanvas"></canvas>
-    </div>
-    <div class="instructions">
-        <h3>Hoe te spelen:</h3>
-        <p>Gebruik de <strong>W</strong> (omhoog), <strong>A</strong> (links), <strong>S</strong> (omlaag), en
-            <strong>D</strong> (rechts) toetsen om de slang te besturen. <br> Pak de rode stippen op om punten te verdienen
-            en de slang langer te maken! Druk op <strong>spatie</strong> om de game opnieuw te starten na game over.</p>
-    </div>
-    <div class="scoreboard">
-        <h3>Scoreboard</h3>
-        <li id="scoresList"></li>
-        <button id="clearScoresButton">Verwijder alle scores</button>
-    </div>
+    <h1>Selecteer uw game!</h1>
+    <ul class="gameSelect">
+        <a href="pages/snake.html">
+            <li class="games"><img src="../images/snake.png" alt="Snake"></li>
+        </a>
+        <a href="pages/tictactoe.html">
+            <li class="games"><img src="../images/tictactoe.png" alt="tictactoe"></li>
+        </a>
+        <a href="pages/pong.html">
+            <li class="games"><img src="../images/pong.png" alt="Pong"></li>
+        </a>
+    </ul>
 </body>
 
 </html>
